@@ -1,5 +1,5 @@
 //1
-var p = new Promise(function(resolve) {
+var p = new Promise(function(resolve){
  setTimeout(function(){
   resolve("Hello Promise!");
  },1000);
