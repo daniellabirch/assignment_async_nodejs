@@ -6,8 +6,7 @@ var p = new Promise(function(resolve) {
 });
 
 p.then(function(message) {
-  // 1 second delay
-  console.log(message); //=> Hello Promise!
+  console.log(message);
 });
 
 //2
@@ -75,7 +74,7 @@ doBadThing(true)
     	console.log(results);
   	})
 	.catch(function(error) {
-    	console.error(error); //=> Boom!
+    	console.error(error);
   	});
 
 doBadThing(false)
@@ -83,5 +82,5 @@ doBadThing(false)
     	console.log(results);
   	})
 	.catch(function(error) {
-    	console.error(error); //=> Boom!
+    	console.error(error);
   	});
