@@ -58,6 +58,7 @@ Promise.all(promisesArray)
     console.log(results);
   });
 
+//4
 function doBadThing(forRealz){
 	return new Promise(function(resolve,reject){
 		if(forRealz==false){
@@ -68,3 +69,19 @@ function doBadThing(forRealz){
 		};
 	});
 };
+
+doBadThing(true)
+	.then(function(results) {
+    	console.log(results);
+  	})
+	.catch(function(error) {
+    	console.error(error); //=> Boom!
+  	});
+
+doBadThing(false)
+	.then(function(results) {
+    	console.log(results);
+  	})
+	.catch(function(error) {
+    	console.error(error); //=> Boom!
+  	});
